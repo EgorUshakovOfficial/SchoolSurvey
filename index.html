@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>University Survery Form</title>
+    <meta name="author" content="Egor Ushakov" /> 
+    <meta name="description" content="Online survey asking university students about online classes"/> 
+    <meta name="keywords" content="education, school, COVID-19, cases" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link rel="stylesheet" href="./css/Style.css">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header>
+        <h1 id="title">University Online Survey</h1>
+    </header>
+    <main class="container">
+        <form id="survey-form">
+            <p id="description"> Description: <i>Online survey asking university students about online classes</i></p>
+            <label for="name" id="name-label">Name:</label>
+            <input id="name" type="text" name="name" value="" placeholder="Your name" required />
+            <br />
+            <br />
+            <label for="email" id="email-label">Email:</label>
+            <input id="email" type="email" name="email-label" value="" placeholder="Your email" required />
+            <br />
+            <br />
+            <label for="number" id="number-label">Age(optional):</label>
+            <input id="number" type="number" min="17" max="100" name="number-label" placeholder="17" value="" />
+            <br />
+            <br />
+            <label for="dropdown">Please select your faculty</label>
+            <select name="faculty" id="dropdown">
+                <option value="Arts">Faculrty of Arts</option>
+                <option value="Science">Faculrt of Science</option>
+                <option value="Engineering">Faculty of Engineering</option>
+                <option value="Commerce">Faculty of Commerce</option>
+                <option value="Economics">Faculty of Economics</option>
+            </select>
+            <br />
+            <br />
+            <p>Which option best describes the difficulty of online classes compared to classes conducted in person?</p>
+            <span id="easier-option">
+                <input type="radio" id="easier" name="difficulty" value="easier">
+                <label for="easier">Easier</label>
+            </span>
+            <br />
+            <span id="same-option">
+                <input type="radio" id="same" name="difficulty" value="about-the-same">
+                <label for="same">About the same</label>
+            </span>
+            <br />
+            <span id="Harder-option">
+                <input type="radio" id="harder" name="difficulty" value="harder">
+                <label for="harder">Harder</label>
+            </span>
+
+            <p>What mental health symptoms have you experienced? (Check all that apply)</p>
+            <span id="anxiety-option">
+                <input type="checkbox" id="anxiety" name="symptoms" value="anxiety">
+                <label for="anxiety">Anxiety</label>
+            </span>
+            <br />
+            <span id="sadness-option">
+                <input type="checkbox" id="sadness" name="symptoms" value="sadness">
+                <label for="sadness">Sadness</label><br>
+            </span>
+            <br />
+            <span id="irritability-option">
+                <input type="checkbox" id="irritability" name="symptoms" value="irritability">
+                <label for="irritability">Irritability</label><br>
+            </span>
+            <br />
+            <span id="social-withdrawl-option">
+                <input type="checkbox" id="social-withdrawal" name="symptoms" value="social-withdrawal">
+                <label for="social-withdrawal">Social-withdrawal</label><br>
+            </span>
+            <br />
+            <span id="changes-in-mood-option">
+                <input type="checkbox" id="changes-in-mood" name="symptoms" value="changes-in-mood">
+                <label for="changes-in-mood">Changes in mood</label><br>
+            </span>
+            <br />
+            <span id="changes-in-sleeping-option">
+                <input type="checkbox" id="changes-in-sleeping" name="symptoms" value="changes-in-sleeping">
+                <label for="changes-in-sleeping">Changes in sleeping patterns</label><br>
+            </span>
+            <br />
+            <label for="comments">Any other symptoms?</label>
+            <br />
+            <textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+            <br />
+            <input type="submit" value="Submit" id="submit" />
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿.container{
+    width: 60%; 
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#description{
+    text-align: center;
+}
+
+p, label{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#submit{
+    background: green; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
